@@ -188,9 +188,10 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-        #         font pango:Fira Code 14
 #    status_command i3status
-    font pango:Fira Code, FontAwesome
+    # font pango:Fira Code, FontAwesome
+    # font pango:DejaVu Sans, Fira Code 14
+    font pango:DejaVu Sans Mono, FontAwesome 12
     status_command ~/.cargo/bin/i3status-rs ~/.config/i3-status-rust/config.toml
     colors {
         separator #666666
