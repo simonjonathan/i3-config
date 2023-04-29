@@ -41,6 +41,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Set desktop background color
+exec --no-startup-id xsetroot -solid "#333333"
 
 # switch between laptop and external displays 
 # https://gist.github.com/amanusk/6b79d407945ca79caa945ce2658fd987
@@ -56,7 +58,7 @@ bindsym $mod+Return exec --no-startup-id kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod1+space exec --no-startup-id dmenu_run
+bindsym $mod+space exec --no-startup-id dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -107,10 +109,10 @@ bindsym $mod+t layout stacking
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 # bindsym $mod+a focus parent
